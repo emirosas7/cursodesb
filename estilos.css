@@ -1,0 +1,17 @@
+
+
+body {
+text-align: center;
+text-decoration: dashed;
+    color: rgb(5, 20, 33);
+    size: 100px;
+    border-radius: 100px;
+    border-color: red;
+}
+
+div
+{ 
+
+    text-align: center;
+    display: flex;
+}

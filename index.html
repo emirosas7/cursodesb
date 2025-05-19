@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curso de Desbloqueo de Celulares</title>
+  <style>
+    body {
+      padding-top: 50px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #232020;
+      color: #333;
+    }
+
+     #banner-descuento {
+    background-color: #e63946;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+  }
+
+    header {
+      background-color: #1c4e90;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .video {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .beneficios {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .beneficios ul {
+      list-style-type: "✔️ ";
+      padding-left: 20px;
+    }
+
+    .testimonios {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .testimonios blockquote {
+      margin: 15px 0;
+      font-style: italic;
+    }
+
+    .boton-compra {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+      margin-top: 40px;
+    }
+
+    .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-btn:hover {
+    background-color: #128c4a;
+  }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Curso Completo de Desbloqueo de Celulares</h1>
+  <p>Aprendé desde cero y empezá a ganar dinero desbloqueando celulares</p>
+</header>
+
+<div id="banner-descuento">
+  <p>🔥 50% de descuento inscribiéndote en las próximas <span id="contador">02:00:00</span> horas!</p>
+</div>
+
+<div class="container">
+
+  <div class="video">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/wjLZMZJfr2E?si=1wyXQIkztEIT80si" title="Curso demo" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="beneficios">
+    <h2>¿Qué vas a aprender?</h2>
+    <ul>
+      <li>Desbloqueo por software y hardware</li>
+      <li>Uso de herramientas como Octoplus y Chimera</li>
+      <li>Solución de errores comunes de Android e iPhone</li>
+      <li>Cómo ofrecer el servicio y captar clientes</li>
+    </ul>
+  </div>
+
+  <a class="boton-compra" href="#contacto">¡Quiero el curso ahora!</a>
+
+  <div class="testimonios">
+    <h2>Testimonios de alumnos</h2>
+    <blockquote>"Nunca pensé que podría aprender tanto desde casa. ¡Ya estoy ganando dinero!" — Carlos D.</blockquote>
+    <blockquote>"Súper claro, práctico y actualizado. Recomiendo este curso al 100%." — Mariana R.</blockquote>
+  </div>
+
+  <form id="contacto" action="https://formsubmit.co/emilianorosas2@gmail.com" method="POST">
+  <label>Nombre completo</label>
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+  <label>Email</label>
+  <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+  <label>Mensaje (opcional)</label>
+  <textarea name="mensaje" rows="4" placeholder="Escribinos si tenés dudas..."></textarea>
+
+  <button type="submit">Solicitar inscripción</button>
+</form>
+
+<script>
+  // Duración del contador en segundos (2 horas = 7200 segundos)
+  const DURACION_SEGUNDOS = 7200;
+
+  // Momento de inicio (cuando se carga la página)
+  let tiempoInicio = Date.now();
+
+  function actualizarContador() {
+    let ahora = Date.now();
+    let segundosPasados = Math.floor((ahora - tiempoInicio) / 1000);
+    let segundosRestantes = DURACION_SEGUNDOS - segundosPasados;
+
+    if (segundosRestantes < 0) {
+      segundosRestantes = 0;
+      clearInterval(intervalo);
+      document.getElementById('banner-descuento').innerHTML = "<p>⏰ ¡El descuento terminó!</p>";
+      return;
+    }
+
+    let horas = Math.floor(segundosRestantes / 3600);
+    let minutos = Math.floor((segundosRestantes % 3600) / 60);
+    let segundos = segundosRestantes % 60;
+
+    // Formato 2 dígitos
+    let formato = (num) => num.toString().padStart(2, '0');
+
+    document.getElementById('contador').textContent = `${formato(horas)}:${formato(minutos)}:${formato(segundos)}`;
+  }
+
+  actualizarContador(); // Primera llamada
+  let intervalo = setInterval(actualizarContador, 1000);
+</script>
+
+
+</div>
+
+<a href="https://wa.me/59812345678" target="_blank" class="whatsapp-btn" aria-label="Escribir por WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:24px; vertical-align:middle; margin-right:8px;">
+  Escribinos...
+</a>
+
+<footer>
+
+  &copy; 2025 CursoDesbloqueo. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
